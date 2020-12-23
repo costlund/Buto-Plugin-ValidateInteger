@@ -11,4 +11,7 @@ items:
       -
         plugin: validate/integer
         method: validate_integer    
+        data:
+          min: 2
+          max: 33
 ```
