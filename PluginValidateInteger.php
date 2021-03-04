@@ -23,7 +23,7 @@ class PluginValidateInteger{
     }
     return $form;   
   }
-  private function is_integer($num){
+  public function is_integer($num){
     if(preg_match('/^\d+$/',$num)){
       return true;
     }else{
