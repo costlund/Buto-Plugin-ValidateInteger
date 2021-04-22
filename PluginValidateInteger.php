@@ -24,7 +24,7 @@ class PluginValidateInteger{
     return $form;   
   }
   public function is_integer($num){
-    if(preg_match('/^\d+$/',$num)){
+    if(preg_match('/^\d+$/',str_replace('-', '', $num))){
       return true;
     }else{
       return false;
